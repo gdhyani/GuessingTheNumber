@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#d1d9d9;
+}
+.header{
+    background-color: #94d0cc;
+    display:flex;
+    font-size:50px;
+    align-items:center;
+    justify-content:center;
+}
+.header a{
+    text-decoration:none;
+    color:black;
+}
+.guess{
+    text-align:center;
+}
+.guess input{
+    width:30%;
+    margin: 10px auto;
+}
+.guess h1{
+    font-size:130px;
+    color: #f29191;
+}
+.result{
+    width:30%;
+    margin:10px auto;
+}
+
+.logs h4{background-color:white;
+    padding:5px;
+    width:30%;
+    margin:10px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:5px;
+}

@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+
+<div class="guess">
+    <h1>1.2.3</h1>
+    <form method="POST">
+        <input name="guess__number" type="text" class="form-control" placeholder="Enter Your Number"
+            autocomplete="off" />
+        <button type="submit" class="btn btn-outline-info">Enter</button>
+    </form>
+</div>
+<div class="result">
+    <% if(guessedList.lenght != 1){ %>
+        <% if(compGuess > guessedListt){ %>
+            <div class="alert alert-warning" role="alert">
+                You are smaller.
+            </div>
+        <% } else if(compGuess  <  guessedListt){ %>
+            <div class="alert alert-warning" role="alert">
+                You are bigger.
+            </div>
+        <% }else{ %>
+            <div class="alert alert-success" role="alert">
+                DONE.
+            </div>
+        <% } %>
+    <% }else{ %>
+    <% } %>
+
+
+</div>
+<div class="logs">
+    <% guessedList.forEach(numb => { %>
+    <h4>You entered <%= numb %> </h4>
+    <% }) %>
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>
